@@ -122,10 +122,11 @@
       .nav-links, .nav-cta-btn { display: none; }
       .nav-hamburger { display: flex; }
       .nav-mobile {
-        position: fixed; inset: 0; top: var(--nav-h);
-        background: var(--c-canvas); padding: 40px var(--page-pad);
-        flex-direction: column; gap: 0; z-index: 99;
+        position: fixed; top: var(--nav-h); left: 0; right: 0; bottom: 0;
+        background: #FEFCFA; padding: 40px var(--page-pad);
+        flex-direction: column; gap: 0; z-index: 9999;
         border-top: 1px solid var(--c-hairline);
+        overflow-y: auto;
       }
       .nav-mobile.is-open { display: flex; }
       .nav-mobile a {
